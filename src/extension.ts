@@ -138,6 +138,9 @@ async function collectData(
     }
   }
 
+  // Sort Claude sessions: most recently started first
+  claudeSessions.sort((a, b) => new Date(b.startTime).getTime() - new Date(a.startTime).getTime());
+
   return {
     terminals,
     claudeSessions,
