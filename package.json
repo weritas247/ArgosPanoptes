@@ -1,0 +1,40 @@
+{
+  "name": "argos-panoptes",
+  "displayName": "Argos Panoptes",
+  "description": "Terminal process monitor and Claude Code session dashboard",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.93.0" },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [{
+        "id": "argos-panoptes",
+        "title": "Argos Panoptes",
+        "icon": "media/icon.svg"
+      }]
+    },
+    "views": {
+      "argos-panoptes": [{
+        "type": "webview",
+        "id": "argosPanoptes.sidebar",
+        "name": "Process Monitor"
+      }]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "ts-mocha test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.5.0",
+    "@types/vscode": "^1.110.0",
+    "@vscode/test-electron": "^2.5.2",
+    "mocha": "^11.7.5",
+    "ts-mocha": "^11.1.0",
+    "typescript": "^6.0.2"
+  }
+}
