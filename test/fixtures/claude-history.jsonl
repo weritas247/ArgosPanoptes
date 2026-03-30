@@ -1,3 +1,3 @@
-{"type":"human","message":"fix the login bug","timestamp":"2026-03-31T01:00:00.000Z","sessionId":"abc-123-def"}
-{"type":"human","message":"add unit tests","timestamp":"2026-03-31T01:05:00.000Z","sessionId":"abc-123-def"}
-{"type":"human","message":"deploy to staging","timestamp":"2026-03-31T02:00:00.000Z","sessionId":"xyz-789"}
+{"display":"fix the login bug","pastedContents":{},"timestamp":1774886500000,"project":"/Users/redpug/Dev/ArgosPanoptes","sessionId":"abc-123-def"}
+{"display":"add unit tests","pastedContents":{},"timestamp":1774886800000,"project":"/Users/redpug/Dev/ArgosPanoptes","sessionId":"abc-123-def"}
+{"display":"deploy to staging","pastedContents":{},"timestamp":1774890400000,"project":"/Users/redpug/Dev/other","sessionId":"xyz-789"}

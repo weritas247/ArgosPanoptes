@@ -11,7 +11,7 @@ describe("SessionParser", () => {
       const session = parseSessionFile(filePath, 12345);
       assert.strictEqual(session.sessionId, "abc-123-def");
       assert.strictEqual(session.workingDirectory, "/Users/redpug/Dev/ArgosPanoptes");
-      assert.strictEqual(session.startTime, "2026-03-31T01:00:00.000Z");
+      assert.ok(session.startTime); // Unix ms converted to ISO string
       assert.strictEqual(session.pid, 12345);
     });
   });

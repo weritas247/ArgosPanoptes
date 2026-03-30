@@ -11,7 +11,7 @@ describe("HistoryParser", () => {
     it("should parse all human entries from history", () => {
       const entries = parseHistoryFile(filePath);
       assert.strictEqual(entries.length, 3);
-      assert.strictEqual(entries[0].message, "fix the login bug");
+      assert.strictEqual(entries[0].display, "fix the login bug");
       assert.strictEqual(entries[0].sessionId, "abc-123-def");
     });
   });

@@ -4,18 +4,24 @@ import { ClaudeSession } from "../types";
 
 interface RawSession {
   sessionId: string;
-  workingDirectory: string;
-  startTime: string;
-  processKind?: string;
+  cwd?: string;
+  workingDirectory?: string;
+  startedAt?: number;
+  startTime?: string;
+  kind?: string;
+  entrypoint?: string;
 }
 
 export function parseSessionFile(filePath: string, pid: number): ClaudeSession {
   const raw: RawSession = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  const startTime = raw.startedAt
+    ? new Date(raw.startedAt).toISOString()
+    : raw.startTime || "";
   return {
     sessionId: raw.sessionId,
     pid,
-    workingDirectory: raw.workingDirectory,
-    startTime: raw.startTime,
+    workingDirectory: raw.cwd || raw.workingDirectory || "",
+    startTime,
     model: undefined,
     prompts: [],
     subagents: [],
