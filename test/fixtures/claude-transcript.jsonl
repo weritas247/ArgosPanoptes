@@ -1,0 +1,4 @@
+{"type":"system","model":"claude-opus-4-6","sessionId":"abc-123-def"}
+{"type":"assistant","message":"working on it","usage":{"input_tokens":500,"output_tokens":200},"sessionId":"abc-123-def"}
+{"type":"tool_use","tool":"Agent","subagent_type":"Explore","description":"search codebase","sessionId":"abc-123-def"}
+{"type":"assistant","message":"done","usage":{"input_tokens":300,"output_tokens":150},"sessionId":"abc-123-def"}
