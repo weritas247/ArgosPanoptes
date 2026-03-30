@@ -1,0 +1,8 @@
+  PID  PPID  %CPU %MEM     ELAPSED STAT COMM
+50001     1   0.0  0.1    01:23:45 Ss   /bin/zsh
+50010 50001   2.3  1.5       05:30 S+   node
+50020 50010   0.5  0.8       05:29 Sl   /usr/bin/claude
+50021 50020   0.1  0.2       04:00 Sl   node
+50030 50001   0.0  0.0       00:10 S+   ls
+60001     1   0.0  0.1    02:00:00 Ss   /bin/zsh
+60010 60001   5.0  3.2       30:00 S+   python3
