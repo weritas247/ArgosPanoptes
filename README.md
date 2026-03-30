@@ -1,23 +1,36 @@
-# git-init-template
+# Argos Panoptes
 
-웹 프로젝트를 시작할 때 기본으로 사용하는 초기 설정 템플릿.
+VSCode extension for monitoring terminal processes and Claude Code sessions. macOS only.
 
-## 포함 파일
+## Features
 
-| 파일 | 설명 |
-|------|------|
-| `.gitignore` | node_modules, dist, env, 로그 등 제외 |
-| `.editorconfig` | 에디터 간 코딩 스타일 통일 (스페이스 2칸, UTF-8, LF) |
-| `.prettierrc` | 코드 포맷팅 규칙 (싱글쿼트, 세미콜론, 줄폭 100자) |
+- **Process Tree** — View all processes running in each terminal with CPU, memory, and uptime
+- **Port Display** — See listening ports per process, click to open in browser
+- **Process History** — Track recently terminated processes with exit codes
+- **Terminal Tags** — Label terminals for quick identification
+- **Search/Filter** — Filter processes by name across all terminals
+- **Kill & Focus** — Kill processes or jump to their terminal
+- **Claude Code Dashboard** — Session info, prompt timeline, token usage, cost estimation, sub-agent tree, worktree display
 
-## 사용법
+## Development
 
 ```bash
-# 1. 템플릿 클론
-git clone https://github.com/weritas247/git-init-template.git my-project
-
-# 2. 기존 git 히스토리 제거 후 새로 시작
-cd my-project
-rm -rf .git
-git init
+npm install
+npm run compile
+# Press F5 to launch Extension Development Host
 ```
+
+## Testing
+
+```bash
+npm test
+```
+
+## Usage
+
+1. Click the Argos Panoptes icon in the Activity Bar
+2. View process trees for each open terminal
+3. Use the search bar to filter processes
+4. Click port badges to open in browser
+5. Click + tag to label terminals
+6. Claude Code sessions appear automatically with detailed info

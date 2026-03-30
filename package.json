@@ -34,7 +34,7 @@
   "scripts": {
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "test": "TS_CONFIG_PATHS=true TS_NODE_PROJECT=tsconfig.test.json ts-mocha test/**/*.test.ts"
+    "test": "TS_CONFIG_PATHS=true TS_NODE_PROJECT=tsconfig.test.json ts-mocha \"test/**/*.test.ts\""
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
